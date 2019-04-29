@@ -11,31 +11,34 @@ I had make a script which simulate typical copypaste from ya.browser password ma
 5. ???
 6. PROFIT!
 
+## Demo
+Check out this video: https://www.youtube.com/watch?v=wly1G78QwgE
+
 ## Usage
-0. Close every app that could drop a popup window or change app focus
-1. First of all you should install AutoHotkey from https://www.autohotkey.com (In my case it is AutoHotkey 1.1.30.03)
-2. Download .ahk file from this repository
-3. Open blank excel file
+1. Close every app that could drop a popup window or change app focus
+2. First of all you should install AutoHotkey from https://www.autohotkey.com (In my case it is AutoHotkey 1.1.30.03)
+3. Download .ahk file from this repository
+4. Open blank excel file
    1. Fill A1-D1 cells (column titles) like this: name, url, username, password
    2. Set coursor on A2 position
-4. Prepare 3 windows in your visibility: script folder, excel and yandex password manager
-5. Just remember: Ctrl+Esc will stop script. If you stop it, open file again
-6. Prepare script 
+5. Prepare 3 windows in your visibility: script folder, excel and yandex password manager
+6. Just remember: Ctrl+Esc will stop script. If you stop it, open file again
+7. Prepare script 
    1. Open .ahk file in text editor 
    2. Change PassCount to value "more or equal" your password count. It will duplicate last password if you will enter higher value, nothing critical. Just be ready to close script when it done.
    3. Open script (no visible changes, only AHK icon in tray)
-7. (!!!) Click on excel to move app focus on it. Don't change cell coursor.
-8. (!!!) Prepare ya.browser. 
+8. (!!!) Click on excel to move app focus on it. Don't change cell coursor.
+9. (!!!) Prepare ya.browser. 
    1. Open passwords tab
    2. Add password with url like !!!!!!!!!!!!! (must be first in list, see known issues)
    3. Close/approve all (yellow?) popups like "Store your cards data" or "One click password access"
    4. Open any password card
    5. Press Escape (it should close the card). Don't touch anything else from now!
-9.  (!!!) Now you are ready. Ya.Browser must be in focus, excel must be previos focused app
-10. Press Ctrl+I 
-11. When all passwords would copied, check excel file for bad lines (see known issues)
-12. Save as CSV (comma separator)
-13. Import "chrome csv file" in any app you like
+10. (!!!) Now you are ready. Ya.Browser must be in focus, excel must be previos focused app
+11. Press Ctrl+I 
+12. When all passwords would copied, check excel file for bad lines (see known issues)
+13. Save as CSV (comma separator)
+14. Import "chrome csv file" in any app you like
 
 ## Known issues
 * Missclicks. Because of instability in system perfomance, there are some "lost" key pressing during copy. You can add some delays with Sleep function in .AHK or make some fundumental changes and pull request them :)

@@ -1,5 +1,5 @@
 ^i::
-PassCount := 300
+PassCount := 6
 
 Loop %PassCount% {
     ; Накликиваем список паролей
