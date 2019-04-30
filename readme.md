@@ -32,7 +32,7 @@ Check out this video: https://www.youtube.com/watch?v=wly1G78QwgE
    1. Open passwords tab
    2. Add password with url like !!!!!!!!!!!!! (must be first in list, see known issues)
    3. Close/approve all (yellow?) popups like "Store your cards data" or "One click password access"
-   4. Open any password card
+   4. Open first password card (card from 9.2)
    5. Press Escape (it should close the card). Don't touch anything else from now!
 10. (!!!) Now you are ready. Ya.Browser must be in focus, excel must be previos focused app
 11. Press Ctrl+I 
