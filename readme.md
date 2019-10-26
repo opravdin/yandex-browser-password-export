@@ -1,4 +1,6 @@
 # Yandex password export script
+### ATTENTION! If you have issues with missclicks or smth like this, try modded version (yandexexport_asorelmods.ahk).
+It has adjusted delays for slower systems so it should probably fix some issues. Thanks to [asorel1942](https://github.com/asorel1942) for this contribution
 ## Why?
 Because yandex browser dev team had cut password export feature from chromium and had change password storing method. So you don't have any chance to backup/transfer your passwords in normal way.
 
