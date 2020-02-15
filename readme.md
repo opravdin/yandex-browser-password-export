@@ -1,6 +1,9 @@
 # Yandex password export script
 ### ATTENTION! If you have issues with missclicks or smth like this, try modded version (yandexexport_asorelmods.ahk).
 It has adjusted delays for slower systems so it should probably fix some issues. Thanks to [asorel1942](https://github.com/asorel1942) for this contribution
+### ATTENTION №2! It is possible that this script still would not work properly on your PC!
+The reason is difference in systems (because the script works well on my system). I can't do anything here, but you can! Because AHK syntax is really simple, you could trace script execution line by line (repeat actions by yourself). Most often you need to change the number of times script press the Tab key.
+
 ## Why?
 Because yandex browser dev team had cut password export feature from chromium and had change password storing method. So you don't have any chance to backup/transfer your passwords in normal way.
 
