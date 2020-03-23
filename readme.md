@@ -57,5 +57,6 @@ Check out this video: https://www.youtube.com/watch?v=wly1G78QwgE
 
 ## Contributors
 * [asorel1942](https://github.com/asorel1942)
+* [agas0077](https://github.com/agas0077)
 
 Feel free to make any kind of contibution! 
