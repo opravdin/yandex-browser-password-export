@@ -1,7 +1,6 @@
 # Yandex password export script
-### ATTENTION! If you have issues with missclicks or smth like this, try modded version (yandexexport_asorelmods.ahk).
-It has adjusted delays for slower systems so it should probably fix some issues. Thanks to [asorel1942](https://github.com/asorel1942) for this contribution
-### ATTENTION №2! It is possible that this script still would not work properly on your PC!
+
+### ATTENTION! It is possible that this script still would not work properly on your PC!
 The reason is difference in systems. I can't do anything here (because the script works well on my system), but you can! Because AHK syntax is really simple, you could trace script execution line by line (repeat actions by yourself). Most often you need to change the number of times script press the Tab key.
 
 ## Why?
@@ -55,5 +54,8 @@ Check out this video: https://www.youtube.com/watch?v=wly1G78QwgE
   * Yep, everything except passwords. Check "Why" section for reasons.
 * Q: Why don't you reverse engineer protocol or password storage methods?
   * Because f-k this, too long for such a one-time task. This script takes me 15 minutes to create including AHK syntax exploration.
+
+## Contributors
+* [asorel1942](https://github.com/asorel1942)
 
 Feel free to make any kind of contibution! 
