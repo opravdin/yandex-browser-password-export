@@ -12,7 +12,7 @@
 
 ^i::
 ; Количество паролей
-PassCount := 113   
+PassCount := 113
 ; Номер последнего занесенного пароля, изначально должен стоять 0
 passNum := 0
 ; Промежуток времени между операциями
@@ -24,10 +24,11 @@ Loop %PassCount% {
     ; Перезапускаем страницу, чтобы начинать всегда с одного места
     ; Иначе высока вероятность сбиться 
     Send {F5}   
+    Sleep, %sleepTime%
 
     ; Переходим до первого пароля; цифра может МЕНЯТЬСЯ, перед использованием желательно проверить вручную,
     ; открыв страницу с паролями, нажав F5 и затем нажимать Таб пока не дойдет до первого пароля
-    Loop 13 {
+    Loop 11 {
         Send {Tab}
         Sleep, 250
     }
@@ -37,6 +38,7 @@ Loop %PassCount% {
         Send {Down}
         Sleep, %sleepTime%
     }
+	
     ; и заходим внутрь
     Send {Enter}
     Sleep, %sleepTime%
@@ -59,8 +61,9 @@ Loop %PassCount% {
     Sleep, %sleepTime%
     Send {Tab}
     Sleep, %sleepTime%
-    Send ^a
-    Send ^c
+    Send {Tab}
+    Sleep, %sleepTime%
+    Send {Enter}
     ; Подстановка логина
     Sleep, %sleepTime%
     Send !{Tab}
@@ -70,28 +73,18 @@ Loop %PassCount% {
     Sleep, %sleepTime%
     Send !{Tab}
     Sleep, %sleepTime%
-    ; Раскрытие пароля
+    ; Копирование пароля
     Send {Tab}
-    Sleep, %sleepTime%
     Send {Tab}
-    Sleep, %sleepTime%
     Send {Tab}
     Sleep, %sleepTime%
     Send {Enter}
-    Sleep, %sleepTime%
-    ; Копирование пароля
-    Send +{Tab}
-    Sleep, %sleepTime%
-    Send ^a
-    Send ^c
     ; Подстановка пароля, возврат курсора в начало следующей строки
     Send !{Tab}
     Sleep, %sleepTime%
     Send ^v
 
-    Send {Left}
-    Send {Left}
-    Send {Left}
+    Send {Home}
     Send {Down}
 
     Send !{Tab}
